@@ -1,6 +1,6 @@
 {
   "name": "hacking-autofs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Max Hacking",
   "license": "Apache-2.0",
   "summary": "A module to enable configuration of AutoFS mounts",
@@ -8,12 +8,6 @@
   "project_page": "https://github.com/HackingM",
   "issues_url": "",
   "tags": ["autofs"],
-  "operatingsystem_support": [
-    {
-    "operatingsystem":"Gentoo"
-    }
-   ],
-  "dependencies": [
-    { "name": "puppetlabs/concat", "version_requirement": ">=0.2.0" }
-  ]
+  "operatingsystem_support": [ { "operatingsystem": "Gentoo", "Debian", "Solaris", "RedHat" } ],
+  "dependencies": [ { "name": "puppetlabs/concat", "version_requirement": ">=0.2.0" } ]
 }

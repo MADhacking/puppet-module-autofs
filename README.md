@@ -6,19 +6,19 @@ Puppet module for managing Autofs mountpoints and files.
 ### Some Contrived Example usage
 
     autofs::mount { '/home':
-      map     => 'ldap:ou=home,ou=autofs,dc=cat,dc=pdx,dc=edu',
+      device  => 'ldap:ou=home,ou=autofs,dc=cat,dc=pdx,dc=edu',
       options => '-rw,hard,intr,nosuid,nobrowse',
     }
 
     autofs::mount { '/cat':
-      map     => 'ldap:ou=cat,ou=autofs,dc=cat,dc=pdx,dc=edu',
+      device  => 'ldap:ou=cat,ou=autofs,dc=cat,dc=pdx,dc=edu',
       options => '-ro,hard,intr,nosuid,browse',
     }
 
     autofs::include { 'auto.web': }
 
     autofs::mount { '/www':
-      map     => 'ldap:ou=www,ou=autofs,dc=cat,dc=pdx,dc=edu',
+      device  => 'ldap:ou=www,ou=autofs,dc=cat,dc=pdx,dc=edu',
       options => '-rw,hard,intr,nosuid,browse',
       mapfile => '/etc/auto.web',
     }

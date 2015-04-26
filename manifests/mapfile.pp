@@ -1,9 +1,18 @@
+# autofs::mapfile is used to create an empty map file.
+
 define autofs::mapfile($path)
 {
+    include autofs
 	include autofs::params
 
+	# We need to check that the main concat has not already been
+	# declared or we'll get an error.  We can use the same check
+	# to ensure that the base for the map file is only included
+	# once too.
 	if !defined(Concat[$path])
 	{
+	    # The notify ensures that the service will be restarted
+	    # when this map file is modified.
 		concat
 		{
 			$path:
@@ -12,7 +21,10 @@ define autofs::mapfile($path)
 			mode   => '0644',
 			notify => Service[$autofs::params::service],
 		}
-		
+
+		# This fragment will be concatenated into the target file,
+		# which will be the file created above.	It is included only
+		# once as a header to warn that the file is auto generated.
 		concat::fragment
 		{
 			"autofs::mapfile ${title}":
