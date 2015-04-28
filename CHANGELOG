@@ -1,7 +1,7 @@
 Changelog
 =========
 
-hacking-autofs-0.1.0 (2015-04-28)
+hacking-autofs-0.2.0 (2015-04-28)
 ---------------------------------
 
 New
@@ -24,11 +24,6 @@ Fix
 
 - /etc/autofs.{master,misc} files are now only deleted when they should
   be located in /etc/autofs/ [Max Hacking]
-
-Other
-~~~~~
-
-- Fixed puppet-lint warnings. [Max Hacking]
 
 hacking-autofs-0.1.0 (2015-04-20)
 ---------------------------------
