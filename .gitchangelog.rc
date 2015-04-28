@@ -49,6 +49,14 @@
 ##   tags, and other rules only applies to the summary.  The body of the commit
 ##   message will be displayed in the changelog without reformatting.
 
+##
+## ``split_regex`` is a regex 
+##
+## It is used to split a commit log entry into events before procesing each event.
+##
+
+split_regex = r'(?s)(.+?)(?=[Cc]hg|[Ff]ix|[Nn]ew|$)'
+
 
 ##
 ## ``ignore_regexps`` is a line of regexps
@@ -139,8 +147,8 @@ subject_process = (strip |
 ##
 ## Tags that will be used for the changelog must match this regexp.
 ##
-tag_filter_regexp = r'^[0-9]+\.[0-9]+(\.[0-9]+)?$'
-
+#tag_filter_regexp = r'^[0-9]+\.[0-9]+(\.[0-9]+)?$'
+tag_filter_regexp = r'^[a-z\-]+[0-9]+\.[0-9]+(.[0-9]+)?$'
 
 ## ``unreleased_version_label`` is a string
 ##
