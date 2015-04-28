@@ -1,6 +1,15 @@
 Changelog
 =========
 
+hacking-autofs-0.2.1 (2015-04-28)
+---------------------------------
+
+Fix
+~~~
+
+- Operating system support section of metadata.json is now correct. [Max
+  Hacking]
+
 hacking-autofs-0.2.0 (2015-04-28)
 ---------------------------------
 
