@@ -1,0 +1,38 @@
+Changelog
+=========
+
+hacking-autofs-0.1.0 (2015-04-28)
+---------------------------------
+
+New
+~~~
+
+- Autofs module is now compatible with Debian, Solaris and RedHat based
+  distributions! [Max Hacking]
+
+Changes
+~~~~~~~
+
+- Mountpoint parameter to autofs::include is now named sub_mount. [Max
+  Hacking]
+
+- /etc/conf.d/autofs (when present) now notifies service when modified.
+  [Max Hacking]
+
+Fix
+~~~
+
+- /etc/autofs.{master,misc} files are now only deleted when they should
+  be located in /etc/autofs/ [Max Hacking]
+
+Other
+~~~~~
+
+- Fixed puppet-lint warnings. [Max Hacking]
+
+hacking-autofs-0.1.0 (2015-04-20)
+---------------------------------
+
+- First revision. [Max Hacking]
+
+
