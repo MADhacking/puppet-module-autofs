@@ -1,6 +1,6 @@
 {
 	"name": "hacking-autofs",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"author": "Max Hacking",
 	"license": "Apache-2.0",
 	"summary": "A module to enable configuration of AutoFS mounts",
@@ -10,9 +10,12 @@
 	"tags": [ "autofs"
 	],
 	"operatingsystem_support": [{
-			"operatingsystem": "Gentoo",
-			"operatingsystem": "Debian",
-			"operatingsystem": "Solaris",
+			"operatingsystem": "Gentoo"
+		},{
+			"operatingsystem": "Debian"
+		},{
+			"operatingsystem": "Solaris"
+		},{
 			"operatingsystem": "RedHat"
 		}
 	],
