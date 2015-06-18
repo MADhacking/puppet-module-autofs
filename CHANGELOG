@@ -1,6 +1,14 @@
 Changelog
 =========
 
+hacking-autofs-0.2.2 (2015-06-18)
+---------------------------------
+
+Fix
+~~~
+
+- README.md now reflects reality. [Max Hacking]
+
 hacking-autofs-0.2.1 (2015-04-28)
 ---------------------------------
 
